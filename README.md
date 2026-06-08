@@ -1,0 +1,297 @@
+# NutriAI-Virtual-Nutritionist
+An AI-powered virtual nutritionist that creates personalized meal plans, tracks health goals, and provides intelligent dietary guidance.
+
+
+## Overview
+
+NutriAI is an AI-powered healthcare application that acts as a Virtual Nutritionist, helping users generate personalized meal plans based on their health profile, dietary preferences, medical conditions, and fitness goals.
+
+The system combines Machine Learning, Nutrition Science, and Generative AI to analyze user information, calculate nutritional requirements, and generate intelligent dietary recommendations.
+
+NutriAI is designed to make personalized nutrition accessible, interactive, and data-driven.
+
+---
+
+## Features
+
+###  Health Assessment
+
+The application collects and analyzes:
+
+* Age
+* Gender
+* Height
+* Weight
+* BMI
+* Activity Level
+* Exercise Frequency
+* Dietary Preferences
+* Allergies
+* Medical Conditions
+* Medical History
+* Fitness Goals
+
+---
+
+###  Nutrition Analysis
+
+Automatically calculates:
+
+* Body Mass Index (BMI)
+* Basal Metabolic Rate (BMR)
+* Total Daily Energy Expenditure (TDEE)
+* Daily Calorie Requirements
+* Protein Requirements
+* Carbohydrate Requirements
+* Fat Requirements
+
+---
+
+###  Machine Learning Recommendation Engine
+
+NutriAI uses multiple machine learning algorithms to analyze user health data and generate personalized nutrition recommendations.
+
+Algorithms evaluated:
+
+* Random Forest
+* Gradient Boosting
+* Decision Tree
+* K-Nearest Neighbors (KNN)
+
+The system automatically selects the best-performing model and uses it as the production recommendation engine.
+
+---
+
+###  Personalized Meal Planning
+
+Generates customized meal plans based on:
+
+* Health conditions
+* Dietary restrictions
+* Fitness goals
+* Nutritional requirements
+* Lifestyle preferences
+
+Meal plans may include:
+
+* Early Morning
+* Breakfast
+* Mid-Morning Snack
+* Lunch
+* Evening Snack
+* Dinner
+* Post-Workout Meals
+
+The schedule dynamically adapts according to individual user needs.
+
+---
+
+###  AI Virtual Nutritionist
+
+The integrated AI assistant can:
+
+* Explain meal recommendations
+* Answer nutrition-related questions
+* Suggest healthier alternatives
+* Recommend ingredient substitutions
+* Provide dietary guidance
+
+---
+
+###  Grocery List Generator
+
+Automatically:
+
+* Extracts ingredients from meal plans
+* Generates shopping lists
+* Organizes items into categories
+* Estimates required quantities
+
+---
+
+###  Progress Tracking
+
+Track:
+
+* Weight Progress
+* BMI Trends
+* Goal Achievement
+* Historical Recommendations
+* Nutrition Progress
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* Streamlit
+
+### Programming Language
+
+* Python
+
+### Machine Learning
+
+* Scikit-learn
+* Pandas
+* NumPy
+
+### Artificial Intelligence
+
+* Google Gemini API
+
+### Database
+
+* SQLite
+
+### Data Visualization
+
+* Plotly
+* Matplotlib
+
+### Model Persistence
+
+* Joblib
+
+---
+
+## Project Structure
+
+```text
+NutriAI/
+│
+├── app.py
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   ├── nutriai.sqlite3
+│   └── synthetic_nutrition_dataset.csv
+│
+├── models/
+│   ├── best_meal_recommender.joblib
+│   └── model_comparison.csv
+│
+├── nutriai/
+│   ├── __init__.py
+│   ├── ai_chat.py
+│   ├── database.py
+│   ├── grocery.py
+│   ├── ml_engine.py
+│   ├── nutrition.py
+│   └── recommendations.py
+│
+└── scripts/
+    └── train_models.py
+```
+
+---
+
+## Machine Learning Workflow
+
+```text
+User Health Data
+        ↓
+Feature Processing
+        ↓
+Model Evaluation
+(Random Forest, Gradient Boosting,
+Decision Tree, KNN)
+        ↓
+Best Model Selection
+        ↓
+Nutrition Recommendation
+        ↓
+AI Nutritionist
+        ↓
+Personalized Meal Plan
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/yourusername/NutriAI.git
+cd NutriAI
+```
+
+### Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate Environment
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Linux/Mac:
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## Usage
+
+1. Complete the Health Assessment form.
+2. Enter personal and medical information.
+3. Generate nutrition recommendations.
+4. Receive personalized meal plans.
+5. Chat with the AI Virtual Nutritionist.
+6. Generate grocery lists.
+7. Track health and nutrition progress.
+
+---
+
+## Future Improvements
+
+* OCR-based food label scanning
+* Barcode food scanner
+* Voice-enabled nutrition assistant
+* Multi-language support
+* Wearable device integration
+* Real-time grocery delivery integration
+* Advanced recommendation models
+* Mobile application version
+
+---
+
+## Disclaimer
+
+NutriAI is intended for educational and informational purposes only.
+
+The recommendations generated by the application should not be considered professional medical advice, diagnosis, or treatment. Users should consult qualified healthcare professionals before making significant dietary or health-related decisions.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files to deal in the Software without restriction, including the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
+
+
